@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.signup-body{
+    margin:10vh 5% 20px;
+    background-color: rgba(43, 235, 62, 0.2);
+
+}
+.signup-body h3{
+    color: #27822a;
+    text-align: center;
+}
+.signup-section{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px;
+}
+.signup-body img{
+    flex: 1;
+    border-radius: 20px;
+    width: 60%;
+}
+.signup-body form{
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(1,minmax(300px,400px));
+    justify-content: center;
+    align-items: center;
+}
+.signup-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.signup-logo-img{
+    width: 40px;
+    height: 40px;
+    color: green;
+}
+.signup-logo div{
+    font-size: 20px;
+    margin-left: 30px;
+}
+.signup-logo div a{
+    color: #27822a;
+}
+
+.signup-welcome{
+    font-size: clamp(22px,4vw,32px);
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.signup-welcome span{
+    color: #298b2c;
+}
+
+.signup-body form input{
+    padding: 10px 10px;
+    border: gray solid thin;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    outline: #27822a solid thin;
+}
+.signup-btn{
+    background-color: #298b2c;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 10px;
+    border: gray solid thin;
+    border-radius: 6px;
+    margin-top: 20px;
+    outline: #27822a solid thin;
+}
+
+@media  only screen and (max-width:800px) {
+    
+    .signup-body img{
+       display: none;
+    }
+    .signup-logo-img{
+        display: block;
+    }
+}
